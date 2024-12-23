@@ -16,6 +16,7 @@
 //touchmove事件，这个事件无法获取坐标
 function touchMoveFunc(evt) {
     try{
+        console.log("touch-moving")
         if(evt.touches!=null && evt.touches.length == 2){
             evt.preventDefault(); //阻止触摸时浏览器的缩放、滚动条滚动等
             var touch1 = evt.touches[0]; //获取第一个触点
